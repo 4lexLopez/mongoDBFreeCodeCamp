@@ -2,6 +2,7 @@ require('dotenv').config();
 const mongoose = require('mongoose');
 
 let myUri = process.env.MONGO_URI;
+console.log(myUri);
 mongoose.connect(myUri);
 
 let Person;
